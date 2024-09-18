@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <h1 class="mb-20">Welcome</h1>
+        <div class="flex justify-center border">
+            <div class="mockup-phone">
+                <div class="camera"></div>
+                <div class="display">
+                    <div class="artboard artboard-demo phone-1">
+                        <div class="stats text-primary-content">
+                            <div class="stat">
+                                <div class="stat-title">Account balance</div>
+                                <div  class="stat-value">$<span id="va">89400</span></div>
+                                <div class="stat-actions">
+                                    <button id="cin" class="btn btn-sm">Cash In</button>
+                                    <button id="cout" class="btn btn-sm">Cash Out</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div id="div-1">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Amount</span>
+                            </label>
+                            <input type="text" placeholder="Amount" id="amo" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Pin</span>
+                            </label>
+                            <input type="password" placeholder="pin" class="input input-bordered" autocomplete="off" id="pi" required />
+                            <label class="label">
+                              <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
+                            </label>
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="ci" class="btn btn-primary">Cash In</button>
+                          </div>
+                        
+                    </div>
+                    <div id="div-2" class="hidden">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input type="text" placeholder="Amount" id="amou" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input type="password" placeholder="pin" class="input input-bordered" autocomplete="off" id="piu" required />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="co" class="btn btn-primary">Cash Out</button>
+                      </div>
+                    
+                </div>
+                    </div>
+                        </div>
+                </div>
+            </div>
+    </main>
+    <script src="js/home.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/feature.js"></script>
+</body>
+
+</html>
